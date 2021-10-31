@@ -17,11 +17,14 @@ html {
   /* justify-content: center; */ /* mueve los CONTENEDORES horizontalmente */
   /* align-content: center; */ /* mueve los CONTENEDORES verticalmente */
   place-content: end;  /* centra los CONTENEDORES de manera Vertical y Horizontal */
-  justify-items: end; /* mueve los ITEMS horizontalmente */
-  align-items: start; /* mueve los ITEMS verticalmente */
-  /* place-items: start; */ /* mueve los ITEMS vertical y horizontalmente */
+  justify-items: end; /* mueve los items horizontalmente */
+  align-items: start; /* mueve los items verticalmente */
 }
 .item { 
   border: 5px solid #00bcd4;
   font-size: 4rem;
+}
+.item.item-2 {
+  justify-self: start; /* mueve a el propio elemento NO al contenedor */
+  align-self: flex-end;
 }
