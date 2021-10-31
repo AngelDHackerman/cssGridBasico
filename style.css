@@ -1,0 +1,21 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html { 
+  font-size: 62.5%;
+}
+.contenedor { 
+  border: 5px solid #e1bee7;
+  background-color: #fff1ff;
+  display: grid;
+  grid-template-columns: 100px 200px 300px;         /* no permite decir cuantas columnas va a tener y de que ancho sera cada una */
+  /* grid-template-rows: 150px 250px; */            /* con esto le damos formato a las filas */
+  grid-auto-rows: 150px;                            /* con esto le damos formato a las filas sin saber cuantas vamos a tener */
+  grid-auto-flow: column;                                 /* modificamos como se esta llenado nuestra grilla (por defecto esta en row) */
+}
+.item { 
+  border: 5px solid #00bcd4;
+  font-size: 8rem;
+}
