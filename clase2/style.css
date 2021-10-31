@@ -14,6 +14,12 @@ html {
   grid-template-columns: repeat(3, 150px);
   grid-auto-rows: 150px;
   height: 600px;
+  /* justify-content: center; */ /* mueve los CONTENEDORES horizontalmente */
+  /* align-content: center; */ /* mueve los CONTENEDORES verticalmente */
+  place-content: end;  /* centra los CONTENEDORES de manera Vertical y Horizontal */
+  justify-items: end; /* mueve los ITEMS horizontalmente */
+  align-items: start; /* mueve los ITEMS verticalmente */
+  /* place-items: start; */ /* mueve los ITEMS vertical y horizontalmente */
 }
 .item { 
   border: 5px solid #00bcd4;
