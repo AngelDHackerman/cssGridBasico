@@ -7,11 +7,12 @@ html {
   font-size: 62.5%;
 }
 :root { 
-  --verde-claro: ##ccee3a;
+  --verde-claro: #ccee3a;
   --verde: #71bb05;
   --verde-oscuro: #268201;
 }
 .container { 
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 150px);
   grid-template-rows: repeat(3, 150px);
@@ -20,4 +21,33 @@ html {
     "cuadro3 cuadro3 cuadro4"
     "cuadro5 cuadro6 cuadro7"
   ;
+  place-content: center;
+}
+.item-1 { 
+  grid-area: cuadro1;
+  background-color: var(--verde-claro);
+}
+.item-2 { 
+  grid-area: cuadro2;
+  background-color: var(--verde);
+}
+.item-3 {
+  grid-area: cuadro3;
+  background-color: var(--verde-oscuro);
+}
+.item-4 {
+  grid-area: cuadro4;
+  background-color: var(--verde-claro);
+}
+.item-5 {
+  grid-area: cuadro5;
+  background-color: var(--verde-claro);
+}
+.item-6 {
+  grid-area: cuadro6;
+  background-color: var(--verde);
+}
+.item-7 {
+  grid-area: cuadro7;
+  background-color: var(--verde-oscuro);
 }
