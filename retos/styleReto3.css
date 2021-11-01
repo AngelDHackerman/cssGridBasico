@@ -6,3 +6,18 @@
 html { 
   font-size: 62.5%;
 }
+:root { 
+  --verde-claro: ##ccee3a;
+  --verde: #71bb05;
+  --verde-oscuro: #268201;
+}
+.container { 
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  grid-template-areas: 
+    "cuadro1 cuadro2 cuadro2"
+    "cuadro3 cuadro3 cuadro4"
+    "cuadro5 cuadro6 cuadro7"
+  ;
+}
