@@ -54,7 +54,7 @@ main {
 .dishes-grid { 
   display: grid;
   place-content: center;
-  grid-template-columns: repeat(4, minmax(150px, 200px)); /* REDUCIMOS el tamaño del grid */
+  grid-template-columns: repeat(auto-fit, minmax(75px, 200px)); /* REDUCIMOS el tamaño del grid */
   grid-auto-rows: 1fr;
   gap: 24px;
 }
@@ -93,6 +93,32 @@ main {
   object-fit: contain;
 }
 
-@media screen and (max-width: 768px) { 
-  
+@media screen and (max-width: 750px) { 
+  main { 
+    display: grid;
+  }
+  .hero { 
+    grid-template-columns: minmax(300px, 500px);
+    justify-content: center;
+    grid-auto-rows: 300px;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero .info { 
+    margin-left: 40px;
+  }
+  .dishes { 
+    margin: 52px;
+  }
+  .dishes-grid { 
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+  }
+  .menu-grid { 
+    margin: 0 16px;
+    margin-bottom: 60px;
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+    grid-auto-rows: auto;
+  }
 }
